@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Jom Block | Jom Focus",
+    "description": "Jom Focus | Block unproductivity website",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/Icon16.png",
+        "48": "/images/Icon48.png",
+        "128": "/images/Icon128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/Icon16.png",
+            "48": "/images/Icon48.png",
+            "128": "/images/Icon128.png"
+        }
+    },
+    "options_page": "blockSite.html",
+    "permissions": ["storage", "tabs"],
+    "background": {
+      "scripts": ["runBackground.js"],
+      "persistent": false
+    },
+    "minimum_chrome_version": "60"
+}

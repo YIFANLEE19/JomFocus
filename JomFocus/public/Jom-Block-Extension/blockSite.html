@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Bootstrap version 5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Block Unproductivity Sites and Stay Focus | Jom Focus</title>
+    <style>
+        body{
+            background: #F1F0EA;
+        }
+        h1,h2,h3,h4,h5,h6{
+        font-family: 'Concert One', cursive;
+        }
+        p,a,input,label,textarea,span,ul,li,blockquote,button,table,select{
+            font-family: 'Space Mono', monospace;
+        }
+        .block-site-main{
+            height: 100vh;
+        }
+        .actionBtn{
+            cursor: pointer;
+            box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+            font-size: 22px;
+            height: 55px;
+            text-transform: uppercase;
+            color: #534B52;
+            font-weight: bold;
+            width: 200px;
+            background-color: #E0DDCF;
+            border-width: initial;
+            border-style: none;
+            margin: 15px 0;
+            padding: 0px 12px;
+            border-radius: 4px;
+            transition: color 0.5s ease-in-out 0s;
+            outline: none;
+        }
+        .actionBtn:hover{
+            transform: translateY(6px);
+        }
+        .extension-description{
+            height: 40vh;
+            color: #E0DDCF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img src="/images/StayFocus.png" alt="" width="450px" height="450px">
+            </div>
+            <div class="col-md-8 block-site-main d-flex justify-content-center align-items-center flex-column">
+                <h1>Block Unproductivity Site</h1>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Format like facebook.com" id="blockSite" style="height: 150px" cols="30"></textarea>
+                    <label for="blockSite">URL (like facebook.com)</label>
+                  </div>
+                <button class="actionBtn" id="saveBlockSite">Save</button>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="blockCheck">
+                    <label class="form-check-label" for="blockCheck">
+                      Block now
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid extension-description" style="background-color: #534B52;">
+        <div class="row">
+            <div class="col-md-4 extension-description d-flex justify-content-center align-items-center flex-column">
+                <img src="/images/JomFocus.png" alt="">
+                <p>Jom Focus, Stay Focus</p>
+            </div>
+            <div class="col-md-8 d-flex justify-content-center align-items-center flex-column">
+                <h2>How It Work?</h2>
+                <ul>
+                    <li>Enter unproductivity site url.</li>
+                    <li>Click the save button.</li>
+                    <li>Click the 'block now' checkbox to start blocking.</li>
+                    <li>Stop blocking when click again the checkbox.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="blockSite.js"></script>
+</body>
+</html>

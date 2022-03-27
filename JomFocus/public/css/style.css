@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Montserrat&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Baloo 2', cursive;
+}
+p,a,input,label,textarea,span,ul,li,blockquote,button,table,select{
+    font-family: 'Montserrat', sans-serif;
+}
+#pomodoroTimer{
+    height: 70vh;
+}
+.pomodoro-main{
+    background: #534B52;
+    border-radius: 14px;
+}
+.pomodoro-main .button-group{
+    padding: 30px;
+}
+.pomodoro-main .mode-button{
+    font-size: 18px;
+    height: 28px;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: 300;
+    color: #E0DDCF;
+    border: 1px solid transparent;
+    margin: 0 8px;
+    border-radius: 4px;
+    background: none;
+    padding: 0 10px 2px 10px;
+}
+.pomodoro-main .mode-button.active{
+    border-color: #E0DDCF;
+}
+.pomodoro-main .display-time{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 98px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E0DDCF;
+}
+.pomodoro-main .action-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: hsl(175, 26%, 41%);
+    font-weight: bold;
+    width: 200px;
+    background-color: #E0DDCF;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+.pomodoro-main .action-btn.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+  }
+.hidden{
+    display: none;
+}
+/* To Do App */
+.todolist-input-form input{
+    width: 350px;
+    height: 60px;
+    background: #534B52;
+    color: #E0DDCF;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+.todolist-input-form input::placeholder{
+    color: #E0DDCF;
+}
+.todo-content{
+    background: #534B52!important;
+    color: #E0DDCF!important;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.todoContentLabel{
+    color: #E0DDCF;
+}
+.todolist-add-task{
+    width: 350px;
+    height: 60px;
+    background: rgba(83, 75, 82, 0.5);
+    border: 2px dashed #2D232E;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 24px;
+    color: #F1F0EA;
+}
+.todolist-add-task:hover{
+    background: rgba(83, 75, 82, 0.9);
+}
+.todolist-count{
+    height: 50px;
+    background: #534B52;
+    border-radius: 8px;
+    padding-top: 10px;
+    color: #E0DDCF;
+}
+.todolist-count .todolist-count-total{
+    font-size: 28px;
+    font-weight: bold;
+}
+.todo-list{
+    list-style: none;   
+}
+.todolist-todo{
+    color: #E0DDCF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #534B52;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+    border-radius: 8px;
+}
+.todolist-todo li{
+    flex: 1;
+    padding-left: 15px;
+}
+.todo-check-btn, .todo-delete-btn{
+    background: #E0DDCF;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: #534B52;
+}
+.todo-check-btn{
+    background: #534B52;
+    color: #E0DDCF;
+}
+.todoapp-btn{
+    border-radius: 8px;
+    text-decoration: none;
+}
+.todoapp-btn:hover{
+    text-decoration: none;
+    background: #E0DDCF;
+    color: #534B52;
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+.removeAnimate{
+    transform: translateX(100rem);
+    opacity: 0;
+}
+/* To Do App */
+/* Countdown Timer */
+.countdown-main{
+    height: 65vh;
+}
+.time-display-cover{
+    width: 150px;
+    height: 150px;
+    margin: 10px;    
+    background: #534B52;
+    color: #E0DDCF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+.time-string{
+    font-weight: bold;
+    font-size: 64px;
+    letter-spacing: 3px;
+}
+.c-action-btn,.r-action-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: #534B52;
+    font-weight: bold;
+    width: 200px;
+    background-color: #E0DDCF;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+.c-action-btn:hover, .r-action-btn:hover{
+    transform: translateY(6px);
+}
+
+.n-action-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: #E0DDCF;
+    font-weight: bold;
+    width: 200px;
+    background-color:#534B52;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+    text-decoration: none;
+}
+.n-action-btn:hover{
+    transform: translateY(6px);
+    text-decoration: none;
+    color: #E0DDCF;
+}
+
+.u-action-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: #E0DDCF;
+    font-weight: bold;
+    width: 200px;
+    background:#534B52;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+.u-action-btn:hover{
+    transform: translateY(6px);
+}
+.a-action-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #E0DDCF;
+    font-weight: bold;
+    width: 180px;
+    background-color:#534B52;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+    text-decoration: none;
+}
+.a-action-btn:hover , .a-sign-in-btn:hover{
+    transform: translateY(6px);
+    text-decoration: none;
+    color: #E0DDCF;
+}
+.a-sign-in-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #E0DDCF;
+    font-weight: bold;
+    width: 145px;
+    background-color:#534B52;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 8px 24px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+}
+.navbar{
+    background:transparent!important;
+}
+.jomBlock{
+    height: 100vh;
+}
+.a-link{
+    color: #534B52;
+}
+.a-link:hover{
+    color: #534B52;
+}
+/* Matrix */
+.m-header{
+    color: #534B52;
+    background-color: #E0DDCF;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+.m-content{
+    background-color: #534B52;
+    color:#E0DDCF;
+    margin: 8px;
+    border-radius: 8px;
+    padding: 14px;
+}
+.m-add-button{
+    background-color:#534B52;
+    color:#E0DDCF;
+    border-radius: 8px;
+    font-size: 28px;
+}
+.m-delete-button{
+    background-color:#E0DDCF;
+    color:#534B52;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 4px;
+}
+.m-delete-button:hover{
+    background-color:#E0DDCF;
+    color:#534B52;
+    text-decoration: none;
+}
+/* Matrix */
+/* Admin */
+.total-user{
+    border-radius: 14px;
+    background: #534B52;
+    color: #E0DDCF;
+    padding: 15px;
+}
+.admin-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #E0DDCF;
+    font-weight: bold;
+    background-color:#534B52;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+}
+.admin-btn:hover{
+    text-decoration: none;
+    color: #E0DDCF;
+}
+/* Admin */
+/* Home Page */
+.banner{
+    height: 100vh;
+}
+/* Home Page */
+/* JomRest Timer */
+.rest-time-display{
+    font-size: 100px;
+}
+.restTimer-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: hsl(175, 26%, 41%);
+    font-weight: bold;
+    width: 200px;
+    background-color: #E0DDCF;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+.restTimer-btn:hover{
+    transform: translateY(6px);
+}
+/* JomRest Timer */
+
+#aboutSection{
+    background-color: #534B52;
+    color: #E0DDCF;
+}
+.contactUsBanner, .faqsBanner{
+    background-color: #534B52;
+    color: #E0DDCF;
+}
+.cSubmit{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: hsl(175, 26%, 41%);
+    font-weight: bold;
+    width: 200px;
+    background-color: #E0DDCF;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+.cSubmit:hover{
+    transform: translateY(6px);
+}
+/* feedback */
+.feedback-input-form{
+    width: 350px;
+    height: 60px;
+    background: #534B52;
+    color: #E0DDCF;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+.feedback-input-form ::placeholder{
+    color: #E0DDCF;
+}
+/* news */
+.news{
+    background: #534B52;
+    color: #E0DDCF;
+}
+.news-item{
+    text-decoration: none;
+    color: #534B52;
+    margin-top: 10px;
+}
+.news-item:hover{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+.g-btn{
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #E0DDCF;
+    font-weight: bold;
+    width: 145px;
+    background-color:#534B52;
+    border-width: initial;
+    border-style: none;
+    margin: 15px 0;
+    padding: 8px 24px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+}
+.g-btn:hover{
+    transform: translateY(6px);
+    text-decoration: none;
+    background: #E0DDCF;
+    color: #534B52;
+}
+#claimPointModal{
+    color: white;
+}
+.jomShopBg{
+    background: #534B52;
+    color: #E0DDCF;
+}
+.confirmRedeem{
+    background: #534B52;
+    color: #E0DDCF;
+}
