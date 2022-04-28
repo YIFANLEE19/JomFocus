@@ -84,7 +84,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Client side</a>
+                            <a class="nav-link" href="/" target="_blank">Client side</a>
                         </li>
                     </ul>
                     
